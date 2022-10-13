@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shutong Wu</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+             <div class="s-header__block">
+                <div class="s-header__branding">
+                    <p class="site-title">
+                        <a href="index.html" rel="home">Shutong Wu</a>
+                    </p>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
+                        <li><a href="#about" class="smoothscroll">About Me</a></li>
+                        <li><a href="#works" class="smoothscroll">Projects</a></li>
+                        <li><a href="#colophon" class="smoothscroll">Contact</a></li>
+                        <li><a href="./images/Shutong%20Wu%20CV%20.pdf" target="_blank">Resume</a></li>
+
+                    </ul>
+                </nav> <!-- end s-header__nav -->
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://github.com/Scriptwonder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                            <span class="u-screen-reader-text">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shutong-wu-214043172/">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>
+                            <span class="u-screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/scriptwonder/">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px">    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/></svg>
+                            <span class="u-screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:shutong@seas.upenn.edu">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg>
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                </ul>  <!-- end s-header__social -->
+
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- intro
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
+            <div class="row">
+                <div class="column lg-12 s-intro__content">
+
+                    <div class="s-intro__text">
+                        <h1 class="s-intro animate-on-load">
+                            Shutong Wu
+                        </h1>
+                        <h3 class="animate-on-load">Game Developer <span>|</span> Computer Graphics</h3>
+                    </div>
+
+                    <div class="s-intro__bg"></div>
+
+                </div>
+            </div>
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- about
+        ================================================== -->
+        <section id="about" class="s-about">
+
+
+            <div class="s-about__block s-about__intro">
+
+                <div class="row">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle animate-on-load">About Me</h2>
+    
+                        <p class="attention-getter animate-on-load">
+                            I am currently a master student at Penn Engineering with a special focus on Computer Graphics. My interests range from Computer Graphics, VR to game design.
+                            I am seeking for a technical path in computer graphics and game development.<br><br>
+                            I discovered my passion for modern video games and its development since high school,
+                            and I have learned the foundamentals of game development/game design during my undergraduate at Syracuse,
+                            including programming in Unity with C#.
+                            During the two years pandemic gap,
+                            I have been working in the industry and gained multiple hands-on experience with industry standard 3D game engine and computer graphics software,
+                            including both small and large scale game development experience.<br>
+                            <br>
+                            Now I am diving deeper into game development and computer graphics at CGGT, and trying the best I can to create some really fascinating projects.<br>
+                            <br>
+                            Besides academics, I love to exercise(badminton/running/swimming), read books(mostly fiction), and design games.
+                        </p>
+                        <h3 class="text-pretitle animate-on-load"></h3>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle animate-on-load">What I am working on</h2>
+
+                        <p class="attention-getter animate-on-load">
+                            A 2D Pixel Survival Game<br>
+                            A VR Starter Project<br>
+                            Game Development@Penn Upgrade<br>
+                        </p>
+                        <h3 class="text-pretitle animate-on-load"></h3>
+
+                    </div>
+                </div>
+                <div>
+                    <p>
+
+                    <div class="center">
+                        <a href="images/Shutong%20Wu%20CV%20.pdf" target = "_blank" class="btn btn--primary">Download CV</a>
+                    </div>
+
+                    </p>
+                </div>
+
+            </div> <!-- end s-about__intro -->
+
+
+            <div class="s-about__block s-about__career">
+
+                <div class="row s-about__career-header">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle"></h2>
+    
+                        <p class="text-huge-title">
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row s-about__timeline" data-animate-block>
+                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Experience
+                        </h2>
+    
+                        <div class="timeline">
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">ByteDance</h4>
+                                    <h5 class="timeline__meta">Platform Engineer</h5>
+                                    <p class="timeline__timeframe">October 2021 - April 2022</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I collaborated with ByteDance game studios to develop efficiency tools including Overdraw and Mipmap collector that could potentially save hardware usage by 20% and increase frame per second by more than 15fps. Also, I analyzed performance data from studios and find the best optimization in terms of performance.
+                                        My main work results are the overdraw collector and mipmap collector, which could collect the overdraw/mipmap statistics over a duration of time.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Netease</h4>
+                                    <h5 class="timeline__meta">Game Developer</h5>
+                                    <p class="timeline__timeframe">January 2021 - October 2021</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>I developed in-game systems and characters for published games Forever Seven Days. During this job, I gained experience in large project development and project development tools including Unity.
+                                        The main work result included two published game characters and first place in the company's yearly game jam.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+    
+                    </div> <!-- end s-about__timeline-section -->
+    
+                    <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+    
+                        <h2 class="text-subtitle">
+                            Education
+                        </h2>
+    
+                        <div class="timeline">
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">University of Pennsylvania</h4>
+                                    <h5 class="timeline__meta">M.S. Computer Graphics and Game Technology</h5>
+                                    <p class="timeline__timeframe">September 2022 - May 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>
+                                        GPU Programming<br>
+                                        Computer Animation<br>
+                                        3D Modelling<br>
+                                        Physically Based Rendering
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">University of Syracuse</h4>
+                                    <h5 class="timeline__meta">B.S. in Computer Science</h5>
+                                    <p class="timeline__timeframe">September 2016 - May 2020</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>
+                                        Introduction to Computer Graphics<br>
+                                        Data Structure and Algorithms<br>
+                                        C++ Programming<br>
+                                        Autonomous System<br>
+                                        Software Engineering Design<br>
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end s-about__timeline-section -->
+    
+                </div> <!-- end about__timeline -->
+
+
+            </div> <!-- end s-about__career -->
+
+        </section> <!-- end s-about -->
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <h2 class="text-title">Projects</h2>
+                </div>
+            </div>
+
+            <div class="row folio-list block-lg-one-half block-stack-on-550" data-animate-block>
+
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/upenn.png" Title="CUDA PathTracer" data-size="1050x700">
+                                <img src="images/upenn.png">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Graphics / C++ / CUDA</span>
+                                <a href="https://github.com/Scriptwonder/Project3-CUDA-Path-Tracer" title="Project Link" class="project-link">Github Link</a>
+                            </div>
+                            <h4 class="folio-item__title">CUDA PathTracer</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>
+                                In this project I implemented a path tracer in CUDA, with features in mesh loading, texture mapping, antialiasing,
+                                and more.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/50knaive.gif" title="Boids" data-size="1050x700">
+                                <img src="images/50knaive.gif">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Graphics / C++ / CUDA</span>
+                                <a href="https://github.com/Scriptwonder/Project1-CUDA-Flocking" title="Project Link" class="project-link">Project Link</a>
+                            </div>
+                            <h4 class="folio-item__title">Boid Simulation</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>
+                                In this project I implemented a boid flocking simulation, with performance analysis in terms of different methods of boids simulation and block size.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/DavidPumpkinCard.png" title="Upgrade" data-size="1050x700">
+                                <img src="images/DavidPumpkinCard.png" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Game Design / Game Development</span>
+                                <a href="https://www.facebook.com/upgradeatupenn" title="Facebook Link" class="project-link">Facebook Link</a>
+                            </div>
+                            <h4 class="folio-item__title">Penn Upgrade</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>
+                                As a member of Penn Upgrade, I have developed a mini-game, and a boss battle mini project in progress.<br>
+                                There will be more projects including game jam projects and monthly works in this and next semester.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/POPO20210617-191353.png" title="Mini Project" data-size="1050x700">
+                                <img src="images/POPO20210617-191353.png" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Game Jam / Game Development</span>
+                                <a href="https://game.academy.163.com/fresh/2021/12/2021123113.html" title="Project Link" class="project-link">Website Link</a>
+                            </div>
+                            <h4 class="folio-item__title">Star Mirror</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>
+                                This is a 8 people group project we did for the Netease MINI competition. I am in charge of player design, environmental mechanism, and all the special mechanics in the game.<br>
+                                This project won the first place over 12 teams in the end.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-animate-el>
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/66946247_p0.jpg" title="Lost Signal" data-size="1050x700">
+                                <img src="images/66946247_p0.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__meta">
+                                <span class="cat">Game Jam / Game Development</span>
+                                <a href="https://globalgamejam.org/2018/games/lost-signal-1" title="Project Link" class="project-link">Project Link</a>
+                            </div>
+                            <h4 class="folio-item__title">
+                                Lost Signal
+                            </h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>
+                                This is a very early global game jam project I did in my Sophomore year. Inspired by Fallout: New Vegas, I tried to create a branched narrative
+                                that every choice affects the consequences and the ending. In 48 hours I created the game that can be played for 30 minutes and has 6 endings.<br>
+                                A very early and rusty project that started my game design journey.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+
+    
+            </div> <!-- folio-list -->
+
+        <!-- # site footer
+        ================================================== -->
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__contact-header">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle text-center"></h2>
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__contact-content">
+                <div class="column lg-4 md-5 stack-on-900 right-block">
+
+                    <div class="s-footer__contact-info" >
+                        <h2 class="text-subtitle">
+                            Start A Project
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="mailto:shutong@seas.upenn.edu">shutong@seas.upenn.edu</a></li>
+                            <li><a href="tel:+2157761847">+215 776 1847</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="s-footer__social">
+                        <h2 class="text-subtitle">
+                            Connect
+                        </h2>
+                        <ul class="link-list1">
+                            <li>
+                                <a href="https://github.com/Scriptwonder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                                    <span class="u-screen-reader-text">Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/shutong-wu-214043172/">
+                                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24" height="24">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>
+                                    <span class="u-screen-reader-text">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/scriptwonder/">
+                                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24" height="24">    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/></svg>
+                                    <span class="u-screen-reader-text">Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:shutong@seas.upenn.edu">
+                                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24" height="24"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg>
+                                    <span class="u-screen-reader-text">Email</span>
+                                </a>
+                            </li>
+                        </ul>  <!-- end s-header__social -->
+                    </div>
+                    
+                </div>
+            </div> <!-- end s-footer__contact-content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <span>© Copyright Shutong Wu 2022</span>
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+        </section>
+    </div> <!-- end s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
