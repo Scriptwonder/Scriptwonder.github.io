@@ -365,6 +365,7 @@ samp {
     font-size   : 1em;
 }
 
+
 small {
     font-size : 80%;
 }
@@ -387,6 +388,11 @@ sup {
 
 img {
     border-style : none;
+}
+
+.img1 {
+    width: 600px;
+    height: 400px;
 }
 
 button,
